@@ -2,6 +2,10 @@
 
 This template is intended to speed up the creation of new projects using NextJS (currently targeted at Next 13 using the app folder) as well as centralise all our decisions regarding development tooling.
 
+## App folder vs Pages folder
+
+Next.js 13 supports two paradigms for building a site with, the app folder and the pages folder. The app folder is their newest option making use of React 18 features, such as Server Components, that can improve site speed, as well as various other Development Experience benefits. For that reason, this tempate targets the app folder. However, there are valid reasons to avoid the app folder, e.g. "too new/risky", at a clients request, library support, etc.
+
 ## Styling
 
 CSS Components is installed, which is phantom's in-house styling solution, which supports styling React 18 Server Components.
