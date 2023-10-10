@@ -12,6 +12,8 @@ This template is ready to be delpolyed to vercel, typically via their [web UI](h
 
 ### Domain Env Variables
 
+NEXT_PUBLIC_URL = The final production URL.
+
 
 ## Styling
 
