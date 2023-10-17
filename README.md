@@ -8,7 +8,7 @@ Next.js 13 supports two paradigms for building a site with, the app folder and t
 
 ## Deployment to Vercel
 
-This template is ready to be delpolyed to vercel, typically via their [web UI](https://vercel.com/new/phntms). Ensure that your newly created project is part of the Phantom Studios org.
+This template is ready to be delpolyed to vercel, typically via their [web UI](https://vercel.com/new). Ensure that your newly created project is part of the Phantom Studios org.
 
 ### Domain Env Variables
 
