@@ -6,6 +6,15 @@ This template is intended to speed up the creation of new projects using NextJS 
 
 Next.js 13 supports two paradigms for building a site with, the app folder and the pages folder. The app folder is their newest option making use of React 18 features, such as Server Components, that can improve site speed, as well as various other Development Experience benefits. For that reason, this tempate targets the app folder. However, there are valid reasons to avoid the app folder, e.g. "too new/risky", at a clients request, library support, etc.
 
+## Deployment to Vercel
+
+This template is ready to be deployed to Vercel, typically via their [web UI](https://vercel.com/new). Ensure that your newly created project is part of the Phantom Studios org.
+
+### Domain Env Variables
+
+NEXT_PUBLIC_URL = The final production URL.
+
+
 ## Styling
 
 CSS Components is installed, which is phantom's in-house styling solution, which supports styling React 18 Server Components.
