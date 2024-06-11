@@ -1,4 +1,4 @@
-import { styled } from "@phntms/css-components";
+import { styled } from "@phantomstudios/css-components";
 
 import { FONT_VARIABLES } from "@/theme/fonts";
 
