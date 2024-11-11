@@ -7,8 +7,10 @@
     "dev:turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "next lint && npm run lint:style",
+    "lint:fix": "next lint --fix && npm run lint:style:fix",
+    "lint:style": "stylelint \"**/*.scss\"",
+    "lint:style:fix": "stylelint \"**/*.scss\" --fix",
     "depcheck": "npx npm-check --update"
   },
   "dependencies": {
