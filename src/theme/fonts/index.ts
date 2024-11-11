@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 
-export const FONT_VARIABLES = [inter.variable].join(" ");
+export const FONT_VARIABLES = [geist.variable].join(" ");
