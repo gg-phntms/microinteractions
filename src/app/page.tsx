@@ -1,15 +1,17 @@
-import Image from "next/image";
+import { Column, HomePageRoot } from "./styles";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Phantom Next Starter</h1>
-      <Image
-        src="/assets/images/crab.png"
-        alt="crab"
-        width={360}
-        height={270}
-      />
-    </main>
+    <HomePageRoot>
+      <Column>
+        <h1>Micro-interactions</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus
+          voluptas doloribus corrupti qui perspiciatis neque beatae placeat
+          architecto dolores, ullam reprehenderit? Suscipit incidunt enim
+          exercitationem, odio consequuntur consequatur ratione!
+        </p>
+      </Column>
+    </HomePageRoot>
   );
 }

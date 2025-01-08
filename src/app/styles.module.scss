@@ -1,0 +1,16 @@
+.HomePageRoot {
+  display: flex;
+  flex-direction: column;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+
+  max-width: var(--col-md);
+  padding: var(--space-10) var(--space-6);
+  margin: auto;
+
+  text-align: center;
+}
