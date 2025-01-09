@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Modal from "../Modal";
 import { InteractionPanelRoot } from "./styles";
 
 interface Props {
@@ -22,10 +23,9 @@ const InteractionPanel = ({ children }: Props) => {
   return (
     <InteractionPanelRoot onClick={openDialog}>
       {children}
-      <dialog ref={dialogRef}>
-        <p>This is the dialog content!</p>
-        <button onClick={(e) => closeDialog(e)}>Close</button>
-      </dialog>
+      <Modal open={isModalOpen} closeDialog={closeDialog}>
+        <p>Dialog content</p>
+      </Modal>
     </InteractionPanelRoot>
   );
 };
