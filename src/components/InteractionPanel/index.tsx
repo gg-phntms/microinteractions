@@ -23,7 +23,7 @@ const InteractionPanel = ({ children }: Props) => {
   return (
     <InteractionPanelRoot onClick={openDialog}>
       {children}
-      <Modal open={isModalOpen} closeDialog={closeDialog}>
+      <Modal ref={dialogRef} closeDialog={closeDialog}>
         <p>Dialog content</p>
       </Modal>
     </InteractionPanelRoot>
