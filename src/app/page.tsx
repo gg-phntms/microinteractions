@@ -1,3 +1,5 @@
+import Gallery from "@/components/Gallery";
+import InteractionPanel from "@/components/InteractionPanel";
 import { Column, HomePageRoot } from "./styles";
 
 export default function Home() {
@@ -11,6 +13,29 @@ export default function Home() {
           architecto dolores, ullam reprehenderit? Suscipit incidunt enim
           exercitationem, odio consequuntur consequatur ratione!
         </p>
+        <Gallery>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+          <InteractionPanel>
+            <p>hi</p>
+          </InteractionPanel>
+        </Gallery>
       </Column>
     </HomePageRoot>
   );

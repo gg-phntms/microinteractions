@@ -1,0 +1,19 @@
+.InteractionPanelRoot {
+  width: 100%;
+  max-width: 16rem;
+  aspect-ratio: 1;
+  padding: var(--space-6);
+
+  background-color: var(--color-white);
+  border-radius: var(--space-6);
+  box-shadow: 0 var(--space-4) var(--space-9) var(--color-grey-light);
+
+  transition:
+    scale 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    scale: 1.025;
+    box-shadow: 0 var(--space-4) var(--space-10) var(--color-grey-light);
+  }
+}
