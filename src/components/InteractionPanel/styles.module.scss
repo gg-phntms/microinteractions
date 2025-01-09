@@ -1,4 +1,5 @@
 .InteractionPanelRoot {
+  position: relative;
   width: 100%;
   max-width: 16rem;
   aspect-ratio: 1;
@@ -11,4 +12,22 @@
   transition:
     scale 0.2s,
     box-shadow 0.2s;
+
+  .OpenModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: var(--space-4);
+    min-width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--color-grey-lighter);
+
+    font-size: 0.8rem;
+  }
 }

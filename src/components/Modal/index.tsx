@@ -10,7 +10,7 @@ const Modal = ({ children, ref, closeDialog }: Props) => {
   return (
     <ModalRoot ref={ref}>
       <Content>{children}</Content>
-      <Close onClick={(e) => closeDialog(e)}>Close</Close>
+      <Close onClick={(e) => closeDialog(e)}>❌</Close>
     </ModalRoot>
   );
 };
