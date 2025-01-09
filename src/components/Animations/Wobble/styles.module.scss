@@ -1,0 +1,40 @@
+.WobbleRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Square {
+  width: 50%;
+  aspect-ratio: 1;
+
+  background: var(--color-primary);
+  border-radius: var(--space-2);
+
+  transition: scale 0.4s var(--bounce);
+
+  &:hover {
+    animation: wobble 0.5s;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    scale: 1 1;
+  }
+  30% {
+    scale: 1.2 0.8;
+  }
+  60% {
+    scale: 1 1;
+  }
+  80% {
+    scale: 1.05 0.95;
+  }
+  100% {
+    scale: 1 1;
+  }
+}

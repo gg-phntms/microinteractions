@@ -1,5 +1,8 @@
-import Gallery from "@/components/Gallery";
-import InteractionPanel from "@/components/InteractionPanel";
+import Anticipate from "@/components/Animations/Anticipate";
+import Bounce from "@/components/Animations/Bounce";
+import Wobble from "@/components/Animations/Wobble";
+import Gallery from "@/components/Layout/Gallery";
+import InteractionPanel from "@/components/Layout/InteractionPanel";
 import { Column, HomePageRoot } from "./styles";
 
 export default function Home() {
@@ -15,13 +18,16 @@ export default function Home() {
         </p>
         <Gallery>
           <InteractionPanel>
-            <p>example</p>
+            <Bounce />
+            <p>Bounce</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>example</p>
+            <Anticipate />
+            <p>Anticipate</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>example</p>
+            <Wobble />
+            <p>Wobble</p>
           </InteractionPanel>
           <InteractionPanel>
             <p>example</p>

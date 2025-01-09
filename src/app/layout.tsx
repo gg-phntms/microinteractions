@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import RootBody from "@/components/RootBody";
+import RootBody from "@/components/Layout/RootBody";
 
 import "@/theme/global.scss";
 
