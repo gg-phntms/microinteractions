@@ -1,4 +1,4 @@
-import { ModalRoot } from "./styles";
+import { Close, Content, ModalRoot } from "./styles";
 
 interface Props {
   children: React.ReactNode;
@@ -9,8 +9,8 @@ interface Props {
 const Modal = ({ children, ref, closeDialog }: Props) => {
   return (
     <ModalRoot ref={ref}>
-      {children}
-      <button onClick={(e) => closeDialog(e)}>Close</button>
+      <Content>{children}</Content>
+      <Close onClick={(e) => closeDialog(e)}>Close</Close>
     </ModalRoot>
   );
 };

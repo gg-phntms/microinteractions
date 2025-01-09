@@ -15,25 +15,25 @@ export default function Home() {
         </p>
         <Gallery>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>hi</p>
+            <p>example</p>
           </InteractionPanel>
         </Gallery>
       </Column>
