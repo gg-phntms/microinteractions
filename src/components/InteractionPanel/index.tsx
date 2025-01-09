@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Modal from "../Modal";
-import { InteractionPanelRoot } from "./styles";
+import { InteractionPanelRoot, OpenModal } from "./styles";
 
 interface Props {
   children: React.ReactNode;
@@ -21,7 +21,8 @@ const InteractionPanel = ({ children }: Props) => {
   };
 
   return (
-    <InteractionPanelRoot onClick={openDialog}>
+    <InteractionPanelRoot>
+      <OpenModal onClick={openDialog}>ℹ️</OpenModal>
       {children}
       <Modal ref={dialogRef} closeDialog={closeDialog}>
         <p>Dialog content</p>
