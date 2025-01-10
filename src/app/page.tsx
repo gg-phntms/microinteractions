@@ -1,5 +1,7 @@
 import Anticipate from "@/components/Animations/Anticipate";
 import Bounce from "@/components/Animations/Bounce";
+import BounceAnticipate from "@/components/Animations/BounceAnticipate";
+import TextWave from "@/components/Animations/TextWave";
 import Wobble from "@/components/Animations/Wobble";
 import Gallery from "@/components/Layout/Gallery";
 import InteractionPanel from "@/components/Layout/InteractionPanel";
@@ -26,11 +28,16 @@ export default function Home() {
             <p>Anticipate</p>
           </InteractionPanel>
           <InteractionPanel>
+            <BounceAnticipate />
+            <p>Bounce + Anticipate</p>
+          </InteractionPanel>
+          <InteractionPanel modal>
             <Wobble />
             <p>Wobble</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>example</p>
+            <TextWave />
+            <p>Text Wave</p>
           </InteractionPanel>
           <InteractionPanel>
             <p>example</p>
