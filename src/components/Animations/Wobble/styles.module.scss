@@ -27,12 +27,15 @@
   }
   30% {
     scale: 1.2 0.8;
+    translate: 0 10%;
   }
   60% {
     scale: 1 1;
+    translate: 0 0;
   }
   80% {
     scale: 1.05 0.95;
+    translate: 0 2.5%;
   }
   100% {
     scale: 1 1;
