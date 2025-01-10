@@ -1,6 +1,7 @@
 import Anticipate from "@/components/Animations/Anticipate";
 import Bounce from "@/components/Animations/Bounce";
 import BounceAnticipate from "@/components/Animations/BounceAnticipate";
+import Pulse from "@/components/Animations/Pulse";
 import Shadow from "@/components/Animations/Shadow";
 import TextWave from "@/components/Animations/TextWave";
 import Tunnel from "@/components/Animations/Tunnel";
@@ -50,7 +51,8 @@ export default function Home() {
             <p>Shadow</p>
           </InteractionPanel>
           <InteractionPanel>
-            <p>example</p>
+            <Pulse />
+            <p>Pulse</p>
           </InteractionPanel>
         </Gallery>
       </Column>
