@@ -1,14 +1,9 @@
 "use client";
 
 import { useRef } from "react";
+import AnimationModalContent from "../AnimationModalContent";
 import Modal from "../Modal";
-import {
-  Animation,
-  Column,
-  Controls,
-  InteractionPanelRoot,
-  OpenModal,
-} from "./styles";
+import { InteractionPanelRoot, OpenModal } from "./styles";
 
 interface Props {
   children: React.ReactNode;
@@ -34,14 +29,7 @@ const InteractionPanel = ({ children, label, modal }: Props) => {
       {children}
       <p>{label}</p>
       <Modal ref={dialogRef} closeDialog={closeDialog}>
-        <Column>
-          <h2>{label}</h2>
-          <Animation>{children}</Animation>
-          <Controls />
-        </Column>
-        <Column>
-          <p>Lorem ipsum</p>
-        </Column>
+        <AnimationModalContent label={label}>{children}</AnimationModalContent>
       </Modal>
     </InteractionPanelRoot>
   );
