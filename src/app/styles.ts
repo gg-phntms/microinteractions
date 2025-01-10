@@ -9,3 +9,7 @@ export const HomePageRoot = styled("main", {
 export const Column = styled("div", {
   css: css.Column,
 });
+
+export const Description = styled("p", {
+  css: css.Description,
+});

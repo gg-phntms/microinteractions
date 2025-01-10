@@ -8,50 +8,43 @@ import Tunnel from "@/components/Animations/Tunnel";
 import Wobble from "@/components/Animations/Wobble";
 import Gallery from "@/components/Layout/Gallery";
 import InteractionPanel from "@/components/Layout/InteractionPanel";
-import { Column, HomePageRoot } from "./styles";
+import { Column, Description, HomePageRoot } from "./styles";
 
 export default function Home() {
   return (
     <HomePageRoot>
       <Column>
         <h1>Micro-interactions</h1>
-        <p>
-          A collection of simple animations to explore and adapt. Made to help
-          designers with inspiration, and developers with implementation.
-        </p>
+        <Description>
+          A collection of simDescriptionle animations to explore and adapt. Made
+          to help designers with inspiration, and developers with
+          implementation.
+        </Description>
 
         <Gallery>
-          <InteractionPanel>
+          <InteractionPanel label="Bounce">
             <Bounce />
-            <p>Bounce</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Anticipate">
             <Anticipate />
-            <p>Anticipate</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Bounce + Anticipate" modal>
             <BounceAnticipate />
-            <p>Bounce + Anticipate</p>
           </InteractionPanel>
-          <InteractionPanel modal>
+          <InteractionPanel label="Wobble" modal>
             <Wobble />
-            <p>Wobble</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Text Wave">
             <TextWave />
-            <p>Text Wave</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Tunnel">
             <Tunnel />
-            <p>Tunnel</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Shadow">
             <Shadow />
-            <p>Shadow</p>
           </InteractionPanel>
-          <InteractionPanel>
+          <InteractionPanel label="Pulse">
             <Pulse />
-            <p>Pulse</p>
           </InteractionPanel>
         </Gallery>
       </Column>
