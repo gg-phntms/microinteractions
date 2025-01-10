@@ -16,11 +16,10 @@ export default function Home() {
       <Column>
         <h1>Micro-interactions</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus
-          voluptas doloribus corrupti qui perspiciatis neque beatae placeat
-          architecto dolores, ullam reprehenderit? Suscipit incidunt enim
-          exercitationem, odio consequuntur consequatur ratione!
+          A collection of simple animations to explore and adapt. Made to help
+          designers with inspiration, and developers with implementation.
         </p>
+
         <Gallery>
           <InteractionPanel>
             <Bounce />

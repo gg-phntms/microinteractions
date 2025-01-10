@@ -11,12 +11,13 @@
 
   width: 100%;
   max-width: var(--col-lg);
-  padding: var(--space-10) var(--space-6);
+  padding: var(--space-13) var(--space-6);
   margin: auto;
 
   text-align: center;
 
   p {
-    max-width: var(--col-md);
+    max-width: var(--col-xs);
+    margin-bottom: var(--space-9);
   }
 }
