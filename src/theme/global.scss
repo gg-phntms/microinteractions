@@ -20,11 +20,21 @@ body {
   color: var(--color-fg);
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--font-roboto);
   font-size: clamp(3rem, 9vw, 9rem);
   text-transform: uppercase;
   font-stretch: extra-condensed;
+  line-height: 0.8;
+}
+
+h3 {
+  font-family: var(--font-roboto);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+
+  font-weight: 800;
+  font-stretch: ultra-expanded;
   line-height: 0.8;
 }
 

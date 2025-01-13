@@ -1,0 +1,67 @@
+.TunnelRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Square {
+  display: grid;
+  overflow: clip;
+
+  width: 50%;
+  aspect-ratio: 1;
+
+  background: var(--color-primary);
+  border-radius: var(--space-2);
+
+  > * {
+    grid-area: 1 / 1;
+    place-self: center;
+  }
+
+  &:hover .InnerSquare {
+    --delay: 0.1s;
+
+    rotate: 0deg;
+    scale: 1;
+    transition:
+      scale 0.6s ease-out,
+      rotate 0.6s ease-out;
+
+    @for $i from 1 through 4 {
+      &:nth-of-type(4n + #{$i}) {
+        transition-delay: calc(var(--delay) * ($i - 1));
+      }
+    }
+  }
+}
+
+.InnerSquare {
+  rotate: -45deg;
+  scale: 0;
+
+  width: 100%;
+  aspect-ratio: 1;
+
+  background: black;
+  border-radius: var(--space-2);
+
+  &:nth-of-type(4n + 1) {
+    background-color: var(--color-secondary);
+  }
+
+  &:nth-of-type(4n + 2) {
+    background-color: var(--color-primary);
+  }
+
+  &:nth-of-type(4n + 3) {
+    background-color: var(--color-white);
+  }
+
+  &:nth-of-type(4n + 4) {
+    background-color: var(--color-grey);
+  }
+}
