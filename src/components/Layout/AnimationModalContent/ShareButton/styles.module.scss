@@ -20,9 +20,31 @@
     background-color: var(--color-grey-lighter);
     color: var(--color-grey);
     pointer-events: none;
+    animation: wobble 0.5s;
 
     &:hover {
       background-color: var(--color-grey-lighter);
     }
+  }
+}
+
+@keyframes wobble {
+  0% {
+    scale: 1 1;
+  }
+  30% {
+    scale: 1.1 0.8;
+    translate: 0 10%;
+  }
+  60% {
+    scale: 1 1;
+    translate: 0 0;
+  }
+  80% {
+    scale: 1.025 0.95;
+    translate: 0 2.5%;
+  }
+  100% {
+    scale: 1 1;
   }
 }
