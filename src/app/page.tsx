@@ -6,6 +6,7 @@ import Shadow from "@/components/Animations/Shadow";
 import TextWave from "@/components/Animations/TextWave";
 import Tunnel from "@/components/Animations/Tunnel";
 import Wobble from "@/components/Animations/Wobble";
+import WobbleInfo from "@/components/Animations/Wobble/WobbleInfo";
 import Gallery from "@/components/Layout/Gallery";
 import InteractionPanel from "@/components/Layout/InteractionPanel";
 import { Column, Description, HomePageRoot } from "./styles";
@@ -16,36 +17,26 @@ export default function Home() {
       <Column>
         <h1>Micro-interactions</h1>
         <Description>
-          A collection of simDescriptionle animations to explore and adapt. Made
-          to help designers with inspiration, and developers with
-          implementation.
+          A collection of simple animations to explore and adapt. Made to help
+          designers with inspiration, and developers with implementation.
         </Description>
 
         <Gallery>
-          <InteractionPanel label="Bounce">
-            <Bounce />
-          </InteractionPanel>
-          <InteractionPanel label="Anticipate">
-            <Anticipate />
-          </InteractionPanel>
-          <InteractionPanel label="Bounce + Anticipate" modal>
-            <BounceAnticipate />
-          </InteractionPanel>
-          <InteractionPanel label="Wobble" modal>
-            <Wobble />
-          </InteractionPanel>
-          <InteractionPanel label="Text Wave">
-            <TextWave />
-          </InteractionPanel>
-          <InteractionPanel label="Tunnel">
-            <Tunnel />
-          </InteractionPanel>
-          <InteractionPanel label="Shadow">
-            <Shadow />
-          </InteractionPanel>
-          <InteractionPanel label="Pulse">
-            <Pulse />
-          </InteractionPanel>
+          <InteractionPanel label="Bounce" animation={<Bounce />} />
+          <InteractionPanel label="Anticipate" animation={<Anticipate />} />
+          <InteractionPanel
+            label="Bounce + Anticipate"
+            animation={<BounceAnticipate />}
+          />
+          <InteractionPanel
+            label="Wobble"
+            animation={<Wobble />}
+            info={<WobbleInfo />}
+          />
+          <InteractionPanel label="Text Wave" animation={<TextWave />} />
+          <InteractionPanel label="Tunnel" animation={<Tunnel />} />
+          <InteractionPanel label="Shadow" animation={<Shadow />} />
+          <InteractionPanel label="Pulse" animation={<Pulse />} />
         </Gallery>
       </Column>
     </HomePageRoot>

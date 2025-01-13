@@ -1,26 +1,19 @@
-import {
-  Animation,
-  AnimationModalContentRoot,
-  Column,
-  Controls,
-} from "./styles";
+import { Animation, AnimationModalContentRoot, Column } from "./styles";
 
 interface Props {
   label: string;
   children: React.ReactNode;
+  info?: React.ReactNode;
 }
 
-const AnimationModalContent = ({ children, label }: Props) => {
+const AnimationModalContent = ({ children, label, info }: Props) => {
   return (
     <AnimationModalContentRoot>
       <Column>
         <h2>{label}</h2>
         <Animation>{children}</Animation>
-        <Controls />
       </Column>
-      <Column>
-        <p>Lorem ipsum</p>
-      </Column>
+      <Column>{info}</Column>
     </AnimationModalContentRoot>
   );
 };

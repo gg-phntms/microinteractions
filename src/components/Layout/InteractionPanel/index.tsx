@@ -6,12 +6,12 @@ import Modal from "../Modal";
 import { InteractionPanelRoot, OpenModal } from "./styles";
 
 interface Props {
-  children: React.ReactNode;
+  animation: React.ReactNode;
   label: string;
-  modal?: boolean;
+  info?: React.ReactNode;
 }
 
-const InteractionPanel = ({ children, label, modal }: Props) => {
+const InteractionPanel = ({ animation, label, info }: Props) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const openDialog = () => {
@@ -25,11 +25,13 @@ const InteractionPanel = ({ children, label, modal }: Props) => {
 
   return (
     <InteractionPanelRoot>
-      {modal && <OpenModal onClick={openDialog}>ℹ️</OpenModal>}
-      {children}
+      {info && <OpenModal onClick={openDialog}>ℹ️</OpenModal>}
+      {animation}
       <p>{label}</p>
       <Modal ref={dialogRef} closeDialog={closeDialog}>
-        <AnimationModalContent label={label}>{children}</AnimationModalContent>
+        <AnimationModalContent label={label} info={info}>
+          {animation}
+        </AnimationModalContent>
       </Modal>
     </InteractionPanelRoot>
   );
