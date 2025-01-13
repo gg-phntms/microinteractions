@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useRef } from "react";
 import AnimationModalContent from "../AnimationModalContent";
 import Modal from "../Modal";
 import { InteractionPanelRoot, OpenModal } from "./styles";
@@ -12,6 +13,7 @@ interface Props {
 }
 
 const InteractionPanel = ({ animation, label, info }: Props) => {
+  const searchParams = useSearchParams();
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const openDialog = () => {
@@ -22,6 +24,17 @@ const InteractionPanel = ({ animation, label, info }: Props) => {
     e.stopPropagation();
     dialogRef.current?.close();
   };
+
+  useEffect(() => {
+    const paramValue = Array.from(searchParams.values())[0].toLowerCase();
+    const labelValue = label.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    const isInParams = paramValue === labelValue;
+
+    if (dialogRef.current && isInParams) {
+      dialogRef.current.showModal();
+    }
+  }, []);
 
   return (
     <InteractionPanelRoot>
