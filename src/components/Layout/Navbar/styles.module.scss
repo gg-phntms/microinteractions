@@ -1,0 +1,56 @@
+.NavbarRoot {
+  position: fixed;
+  z-index: 1;
+
+  padding: var(--space-6);
+  width: 100%;
+
+  pointer-events: none;
+
+  > * {
+    pointer-events: all;
+  }
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+
+  width: 100%;
+}
+
+.Square {
+  aspect-ratio: 1;
+  width: 2rem;
+  background-color: var(--color-primary);
+  border-radius: var(--space-2);
+}
+
+.Links {
+  display: flex;
+  gap: var(--space-3);
+
+  li {
+    width: fit-content;
+    list-style-type: none;
+  }
+
+  a {
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--color-white);
+    border-radius: var(--space-10);
+    text-decoration-color: transparent;
+    text-underline-offset: var(--space-2);
+    transition:
+      background-color 0.4s,
+      text-decoration-color 0.2s;
+
+    &:hover {
+      background-color: var(--color-grey-lighter);
+      text-decoration: underline;
+      text-decoration-color: unset;
+    }
+  }
+}

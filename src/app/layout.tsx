@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import RootBody from "@/components/Layout/RootBody";
 
+import Navbar from "@/components/Layout/Navbar";
 import "@/theme/global.scss";
 
 export const metadata: Metadata = {
@@ -16,7 +17,10 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <RootBody>{children}</RootBody>
+      <RootBody>
+        <Navbar />
+        {children}
+      </RootBody>
     </html>
   );
 }
