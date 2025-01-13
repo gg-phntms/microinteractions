@@ -1,0 +1,44 @@
+.HomePageRoot {
+  display: flex;
+  flex-direction: column;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+
+  width: 100%;
+  max-width: var(--col-lg);
+  padding: var(--space-13) var(--space-6);
+  margin: auto;
+
+  text-align: center;
+}
+
+.Description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+
+  max-width: var(--col-xs);
+  margin-bottom: var(--space-9);
+
+  a {
+    width: fit-content;
+    margin: auto;
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--space-10);
+
+    color: var(--color-primary);
+    font-weight: 600;
+    text-underline-offset: var(--space-2);
+
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: var(--color-grey-lighter);
+    }
+  }
+}

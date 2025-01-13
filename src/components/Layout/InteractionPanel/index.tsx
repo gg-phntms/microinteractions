@@ -26,7 +26,7 @@ const InteractionPanel = ({ animation, label, info }: Props) => {
   };
 
   useEffect(() => {
-    const paramValue = Array.from(searchParams.values())[0].toLowerCase();
+    const paramValue = Array.from(searchParams.values())[0]?.toLowerCase();
     const labelValue = label.toLowerCase().replace(/[^a-z0-9]/g, "");
 
     const isInParams = paramValue === labelValue;
