@@ -1,6 +1,5 @@
-import { Geist, JetBrains_Mono, Roboto_Flex } from "next/font/google";
+import { JetBrains_Mono, Roboto_Flex } from "next/font/google";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "600", "800"],
@@ -26,8 +25,6 @@ const robotoFlex = Roboto_Flex({
   variable: "--font-roboto",
 });
 
-export const FONT_VARIABLES = [
-  geist.variable,
-  jetBrains.variable,
-  robotoFlex.variable,
-].join(" ");
+export const FONT_VARIABLES = [jetBrains.variable, robotoFlex.variable].join(
+  " ",
+);

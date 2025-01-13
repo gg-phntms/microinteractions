@@ -1,5 +1,5 @@
 .RootBodyElement {
-  font-family: var(--font-geist);
+  font-family: var(--font-roboto);
 
   &:has(dialog[open]) {
     overflow: hidden;
