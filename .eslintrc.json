@@ -39,26 +39,6 @@
   "ignorePatterns": ["next.config.js"],
 
   "rules": {
-    // Import ordering
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["react"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "desc",
-          "caseInsensitive": true
-        }
-      }
-    ],
     "@typescript-eslint/no-unused-vars": [
       "error",
       {

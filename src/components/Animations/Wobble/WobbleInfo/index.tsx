@@ -24,7 +24,7 @@ const WobbleInfo = () => {
         resting on the ground, as shown in the example.
       </p>
       <p>
-        CSS is shown below. This is for a square; you'll need to adjust the
+        CSS is shown below. This is for a square; you&apos;ll need to adjust the
         values for wider elements (e.g. text).
       </p>
       <Code>
