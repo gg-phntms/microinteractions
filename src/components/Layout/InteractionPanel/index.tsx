@@ -25,7 +25,7 @@ const InteractionPanel = ({ animation, label, info }: Props) => {
 
   return (
     <InteractionPanelRoot>
-      {info && <OpenModal onClick={openDialog}>ℹ️</OpenModal>}
+      {info && <OpenModal onClick={openDialog}>i</OpenModal>}
       {animation}
       <p>{label}</p>
       <Modal ref={dialogRef} closeDialog={closeDialog}>
