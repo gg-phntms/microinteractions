@@ -14,8 +14,6 @@
   background: var(--color-primary);
   border-radius: var(--space-2);
 
-  transition: scale 0.4s var(--bounce);
-
   &:hover {
     animation: wobble 0.5s;
   }

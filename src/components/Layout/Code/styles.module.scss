@@ -1,0 +1,16 @@
+.CodeRoot {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+
+  background-image: radial-gradient(
+    var(--color-grey-lighter) 1px,
+    var(--color-white) 1px
+  );
+  background-size: 5px 5px;
+
+  color: var(--color-grey-darker);
+  font-family: var(--font-jetbrains);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
