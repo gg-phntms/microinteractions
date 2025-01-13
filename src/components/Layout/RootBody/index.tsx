@@ -1,3 +1,6 @@
+"use client";
+
+import ReactLenis from "@studio-freight/react-lenis";
 import { RootBodyElement } from "./styles";
 
 interface Props {
@@ -5,7 +8,11 @@ interface Props {
 }
 
 const RootBody = ({ children }: Props) => {
-  return <RootBodyElement>{children}</RootBodyElement>;
+  return (
+    <ReactLenis root>
+      <RootBodyElement>{children}</RootBodyElement>
+    </ReactLenis>
+  );
 };
 
 export default RootBody;
