@@ -9,16 +9,21 @@ import Wobble from "@/components/Animations/Wobble";
 import WobbleInfo from "@/components/Animations/Wobble/WobbleInfo";
 import Gallery from "@/components/Layout/Gallery";
 import InteractionPanel from "@/components/Layout/InteractionPanel";
-import { Column, Description, HomePageRoot } from "./styles";
+import Page from "@/components/Layout/Page";
+import { Column, Description } from "@/components/Layout/Page/styles";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <HomePageRoot>
+    <Page>
       <Column>
         <h1>Micro-interactions</h1>
         <Description>
-          A collection of simple animations to explore and adapt. Made to help
-          designers with inspiration, and developers with implementation.
+          <p>
+            A collection of simple animations to explore and adapt. Made to help
+            designers with inspiration, and developers with implementation.
+          </p>
+          <Link href="/about">About this project</Link>
         </Description>
 
         <Gallery>
@@ -39,6 +44,6 @@ export default function Home() {
           <InteractionPanel label="Pulse" animation={<Pulse />} />
         </Gallery>
       </Column>
-    </HomePageRoot>
+    </Page>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { RootBodyElement } from "./styles";
 
 interface Props {
