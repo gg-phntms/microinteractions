@@ -40,7 +40,7 @@ const InteractionPanel = ({ animation, label, info }: Props) => {
     <InteractionPanelRoot>
       {info && <OpenModal onClick={openDialog}>i</OpenModal>}
       {animation}
-      <p>{label}</p>
+      <h4>{label}</h4>
       <Modal ref={dialogRef} closeDialog={closeDialog}>
         <AnimationModalContent label={label} info={info}>
           {animation}

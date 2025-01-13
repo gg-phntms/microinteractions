@@ -13,6 +13,11 @@
     scale 0.2s,
     box-shadow 0.2s;
 
+  h4 {
+    color: var(--color-copy);
+    font-weight: 500;
+  }
+
   .OpenModal {
     position: absolute;
     top: 0;
