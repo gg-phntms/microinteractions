@@ -12,6 +12,7 @@ import InteractionPanel from "@/components/Layout/InteractionPanel";
 import Page from "@/components/Layout/Page";
 import { Column, Description } from "@/components/Layout/Page/styles";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -27,21 +28,23 @@ export default function Home() {
         </Description>
 
         <Gallery>
-          <InteractionPanel label="Bounce" animation={<Bounce />} />
-          <InteractionPanel label="Anticipate" animation={<Anticipate />} />
-          <InteractionPanel
-            label="Bounce + Anticipate"
-            animation={<BounceAnticipate />}
-          />
-          <InteractionPanel
-            label="Wobble"
-            animation={<Wobble />}
-            info={<WobbleInfo />}
-          />
-          <InteractionPanel label="Text Wave" animation={<TextWave />} />
-          <InteractionPanel label="Tunnel" animation={<Tunnel />} />
-          <InteractionPanel label="Shadow" animation={<Shadow />} />
-          <InteractionPanel label="Pulse" animation={<Pulse />} />
+          <Suspense>
+            <InteractionPanel label="Bounce" animation={<Bounce />} />
+            <InteractionPanel label="Anticipate" animation={<Anticipate />} />
+            <InteractionPanel
+              label="Bounce + Anticipate"
+              animation={<BounceAnticipate />}
+            />
+            <InteractionPanel
+              label="Wobble"
+              animation={<Wobble />}
+              info={<WobbleInfo />}
+            />
+            <InteractionPanel label="Text Wave" animation={<TextWave />} />
+            <InteractionPanel label="Tunnel" animation={<Tunnel />} />
+            <InteractionPanel label="Shadow" animation={<Shadow />} />
+            <InteractionPanel label="Pulse" animation={<Pulse />} />
+          </Suspense>
         </Gallery>
       </Column>
     </Page>

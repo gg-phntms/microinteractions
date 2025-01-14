@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AnimationModalContent from "../AnimationModalContent";
 import Modal from "../Modal";
 import { InteractionPanelRoot, OpenModal } from "./styles";
@@ -40,23 +40,21 @@ const InteractionPanel = ({ animation, label, info }: Props) => {
   }, []);
 
   return (
-    <Suspense>
-      <InteractionPanelRoot>
-        {info && <OpenModal onClick={openDialog}>i</OpenModal>}
-        {animation}
-        <h4>{label}</h4>
-        <Modal ref={dialogRef} closeDialog={closeDialog}>
-          <AnimationModalContent
-            label={label}
-            param={labelReduced}
-            info={info}
-            close={isClosed}
-          >
-            {animation}
-          </AnimationModalContent>
-        </Modal>
-      </InteractionPanelRoot>
-    </Suspense>
+    <InteractionPanelRoot>
+      {info && <OpenModal onClick={openDialog}>i</OpenModal>}
+      {animation}
+      <h4>{label}</h4>
+      <Modal ref={dialogRef} closeDialog={closeDialog}>
+        <AnimationModalContent
+          label={label}
+          param={labelReduced}
+          info={info}
+          close={isClosed}
+        >
+          {animation}
+        </AnimationModalContent>
+      </Modal>
+    </InteractionPanelRoot>
   );
 };
 
