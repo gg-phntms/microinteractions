@@ -31,7 +31,7 @@ export default function About() {
               <strong>Stick to two states.</strong> The element might do a bunch
               of different things between those two states, and you might layer
               several animations, but fundamentally you&apos;ll mostly be
-              transitioning between "on" and "off".
+              transitioning between &quot;on&quot; and &quot;off&quot;.
             </li>
             <li>
               <strong>Scale, transform and rotate.</strong> These are the basic
