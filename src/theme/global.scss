@@ -44,6 +44,17 @@ p {
   color: var(--color-copy);
 }
 
+strong {
+  color: var(--color-grey-darker);
+}
+
+li {
+  margin-left: var(--space-5);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-copy);
+}
+
 button {
   all: unset;
   box-sizing: border-box;

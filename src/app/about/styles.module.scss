@@ -3,21 +3,22 @@
   flex-direction: column;
 }
 
-.Column {
+.LeftAlign {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-8);
-
+  gap: var(--space-6);
+  align-items: left;
   width: 100%;
-  max-width: var(--col-lg);
-  padding: var(--space-13) var(--space-6);
-  margin: auto;
+  text-align: left;
 
-  text-align: center;
+  a {
+    color: var(--color-primary);
+    font-weight: 800;
+    text-underline-offset: var(--space-2);
+    transition: color 0.2s;
 
-  .Description {
-    max-width: var(--col-xs);
-    margin-bottom: var(--space-9);
+    &:hover {
+      color: var(--color-primary-dark);
+    }
   }
 }
