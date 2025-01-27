@@ -17,14 +17,15 @@ export default function About() {
         <LeftAlign>
           <h3>Animations should be simple</h3>
           <p>
-            We don't want to distract from the original purpose of the website,
-            just enhance it. We also want them to be as painless as possible to
-            implement.
+            We don&apos;t want to distract from the original purpose of the
+            website, just enhance it. We also want them to be as painless as
+            possible to implement.
           </p>
           <p>
             To that end,{" "}
             <strong>every animation in the gallery uses native CSS. </strong>
-            Here's a few things to consider when designing animations for CSS.
+            Here&apos;s a few things to consider when designing animations for
+            CSS.
           </p>
           <ul>
             <li>
