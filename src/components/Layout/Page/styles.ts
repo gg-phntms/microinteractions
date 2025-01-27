@@ -8,6 +8,12 @@ export const PageRoot = styled("main", {
 
 export const Column = styled("div", {
   css: css.Column,
+  variants: {
+    width: {
+      narrow: css.Column__narrow,
+      extraNarrow: css.Column__extraNarrow,
+    },
+  },
 });
 
 export const Description = styled("div", {

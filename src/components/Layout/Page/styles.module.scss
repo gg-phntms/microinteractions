@@ -15,6 +15,14 @@
   margin: auto;
 
   text-align: center;
+
+  &__narrow {
+    max-width: var(--col-md);
+  }
+
+  &__extraNarrow {
+    max-width: var(--col-sm);
+  }
 }
 
 .Description {
